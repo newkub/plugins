@@ -15,23 +15,24 @@
       "cache": false
     },
     "format": {
-      "dependsOn": ["^prepare"]
+      "inputs": ["**/*.{ts,tsx,js,jsx,json,md}"]
     },
     "lint": {
-      "dependsOn": ["^format"],
+      "inputs": ["**/*.{ts,tsx,js,jsx}"],
       "cache": false
     },
     "test": {
+      "inputs": ["src/**/*.ts", "test/**/*.ts"],
       "dependsOn": ["^lint"],
       "cache": true
     },
     "build": {
       "dependsOn": ["^lint"],
-      "outputs": [],
-      "cache": false
+      "outputs": ["dist/**"],
+      "cache": true
     },
     "verify": {
-      "dependsOn": ["^test"],
+      "dependsOn": ["^test", "^build"],
       "cache": false
     },
     "preview": {
