@@ -1,9 +1,0 @@
-[submodule "vitest-plugins"]
-	path = vitest-plugins
-	url = https://github.com/newkub/vitest-plugins
-[submodule "tsdown-plugins"]
-	path = tsdown-plugins
-	url = https://github.com/newkub/tsdown-plugins
-[submodule "vite-plugins"]
-	path = vite-plugins
-	url = https://github.com/newkub/vite-plugins

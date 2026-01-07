@@ -3,12 +3,9 @@
   "private": true,
   "packageManager": "bun@1.3.5",
   "workspaces": [
-    "tsdown-plugins",
-    "tsdown-plugins/packages/*",
-    "vite-plugins",
-    "vitest-plugins",
-    "vitest-plugins/packages/*",
-    "vitest-plugins/examples/*"
+    "tsdown-plugins/*",
+    "vite-plugins/*",
+    "vitest-plugins/*"
   ],
   "scripts": {
     "watch": "turbo watch verify --ui=tui",
